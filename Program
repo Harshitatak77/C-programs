@@ -1,0 +1,41 @@
+Program to add 2 complex number in class by passing objects as function arguments.
+
+#include<iostream.h>
+using namespace std;
+Class Complex
+                  {
+                    private:
+                    float real,img;
+                    public:
+                    void getReal ()
+                   {   
+                    cin>>real;   }
+                   void getImg()
+                   {
+                   cin>>img;   }
+                   void display ()
+                   {
+                  cout <<real <<”+”<<img <<”i”;
+                   }
+                 void sum(Complex C1,Complex C2)
+                 {
+                 real=C1.real+C2.real;
+                 img=C1.img+C2.img;
+                 }
+               };
+int main ()
+{
+Complex C1,C2,C3;
+cout <<”Enter real part of Ist complex no.”;
+C1.getReal ();
+cout<<”Enter imaginary part of Ist complex no.”;
+C1.getImg ();
+cout <<”Enter real part of 2nd complex no.”;
+C2.getReal ();
+cout <<”Enter imaginary part of 2nd complex no.”;
+C2.getImg ();
+C3.sum (C1,C2);
+cout <<”Sum of 2 complex no. Is”;
+C3.display ();
+return 0;
+}
