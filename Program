@@ -1,6 +1,7 @@
 //Program to add 2 complex number in class by passing objects as function arguments.
+//Author- Harshita Yak
 
-#include<iostream.h>
+#include<iostream>
 using namespace std;
 class Complex //creating a class
     {
@@ -17,7 +18,7 @@ class Complex //creating a class
         }
         void display() //function to display the sum 
         {
-         cout<<real<<”+”<<img<<”i”;
+         cout<<real<<"+"<<img<<"i";
         }
         void sum(Complex C1,Complex C2) //adds two complex no.by taking objects as func arguments 
         {
@@ -28,16 +29,16 @@ class Complex //creating a class
 int main()
 {
 Complex C1,C2,C3; //declaring objects of class
-cout<<”Enter real part of Ist complex no.”;
+cout<<"Enter real part of Ist complex no.";
 C1.getReal(); //call of public functions of class via objects
-cout<<”Enter imaginary part of Ist complex no.”;
+cout<<"Enter imaginary part of Ist complex no.";
 C1.getImg();
-cout<<”Enter real part of 2nd complex no.”;
+cout<<"Enter real part of 2nd complex no.";
 C2.getReal();
-cout<<”Enter imaginary part of 2nd complex no.”;
+cout<<"Enter imaginary part of 2nd complex no.";
 C2.getImg();
 C3.sum(C1,C2);
-cout<<”Sum of 2 complex no.is”;
+cout<<"Sum of 2 complex no.is";
 C3.display();
 return 0;
 }
