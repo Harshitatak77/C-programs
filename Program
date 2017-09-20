@@ -1,5 +1,5 @@
 //Program to add 2 complex number in class by passing objects as function arguments.
-//Author- Harshita Yak
+//Author- Harshita Tak
 
 #include<iostream>
 using namespace std;
